@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://raw.githubusercontent.com/devanshjshah/contact-cards/main/Jayesh_B_Shah.vcf" />
+  <meta charset="UTF-8">
+  <title>Download vCard</title>
 </head>
 <body>
-  <p>If you are not redirected, <a href="https://raw.githubusercontent.com/devanshjshah/contact-cards/main/Jayesh_B_Shah.vcf">click here</a>.</p>
+  <p>If your download doesn’t start automatically, <a href="Jayesh_B_Shah.vcf" download>click here</a>.</p>
+
+  <script>
+    // Auto-download vCard
+    const link = document.createElement('a');
+    link.href = 'Jayesh_B_Shah.vcf';
+    link.download = 'Jayesh_B_Shah.vcf';
+    document.body.appendChild(link);
+    link.click();
+  </script>
 </body>
 </html>
